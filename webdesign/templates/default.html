@@ -1,0 +1,157 @@
+{% load static %}
+
+{% block header %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Medicaps University</title>
+
+    <!-- Bootstrap -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+	<link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+	<link rel="stylesheet" href="{% static 'css/animate.css' %}">
+	<link href="{% static 'css/animate.min.css' %}" rel="stylesheet"> 
+	<link href="{% static 'css/style.css' %}" rel="stylesheet" />	
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="{% static 'ico.png' %}">
+
+  </head>
+  <body>	
+	<header id="header">
+        <nav class="navbar navbar-default navbar-static-top" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                   <div class="navbar-brand">
+						<img src="{% static 'img/reg.png' %}" height="61" width="320">
+					</div>
+                </div>				
+                <div class="navbar-collapse collapse">							
+					<div class="menu">
+						<ul class="nav nav-tabs" role="tablist">
+							<li role="presentation"><a href="/college/home" class="active">Home</a></li>
+							<li role="presentation"><a href="/college/about">About Us</a></li>
+							<li role="presentation"><a href="/college/gallery1">Gallery</a></li>
+							<li role="presentation"><a href="/college/login1">Login</a></li>
+							<li role="presentation"><a href="/college/resetpw">Reset</a></li>
+							<li role="presentation"><a href="/college/contact1">Contact</a></li>
+						</ul>
+					</div>
+				</div>		
+            </div><!--/.container-->
+        </nav><!--/nav-->		
+    </header><!--/header-->	
+
+{% endblock %}
+
+
+{% block content %}
+
+{% endblock %}
+
+
+{% block footer %}
+
+	<footer>
+		<div class="container">
+			<div class="col-md-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+				<h4>About Us</h4>
+				<img src="{% static 'img/unilogo.jpg' %}" height="80" width="80" title="Medicaps University">						
+				<div class="contact-info">
+					<ul>
+						<li><i class="fa fa-home fa"></i>&nbsp;A.B. Road, Pigdamber, Rau, Indore, Madhya Pradesh</li>
+						<li><i class="fa fa-phone fa"></i>&nbsp;(0731) 425 9656</li>
+						<li><i class="fa fa-envelope fa"></i>&nbsp;info@medicaps.ac.in</li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="col-md-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">				
+				<div class="text-center">
+					<h4>Our Prominent Recruiters</h4>
+					<ul class="sidebar-gallery">
+						<li><a href="https://www.impetus.com/" target="blank"><img src="{% static 'img/impetus.png' %}" title="Impetus" height="63" width="107" alt="" /></a></li>
+						<li><a href="https://www.infosys.com/" target="blank"><img src="{% static 'img/infosys.jpg' %}" title="Infosys" height="63" width="107" alt="" /></a></li>
+						<li><a href="https://www.tcs.com/" target="blank"><img src="{% static 'img/tcs.jpg' %}" title="Tata Consultancy Services" height="63" width="107" alt="" /></a></li>
+						<li><a href="https://www.eicher.in/" target="blank"><img src="{% static 'img/eicher.png' %}" title="Eicher" height="63" width="107" alt="" /></a></li>
+						<li><a href="https://www.wipro.com/en-IN/" target="blank"><img src="{% static 'img/wipro.jpg' %}" title="Wipro Technologies" height="63" width="107" alt="" /></a></li>
+						<li><a href="https://www.accenture.com/in-en" target="blank"><img src="{% static 'img/accenture.png' %}" title="Accenture" height="63" width="107" alt="" /></a></li>					
+					</ul>
+				</div>
+			</div>
+			
+			<div class="col-md-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms">				
+				<div class="">
+					<h4>Medicaps E-Cell</h4>
+					<p>Join us today to learn the entrepreneurial skills through various activities. Enter your email below to join.</p>
+					<div class="btn-gamp">		
+						<input type="email" class="form-control" id="exampleInputEmail3" placeholder="Enter Email">
+					</div>
+					<div class="btn-gamp">
+						<a type="submit" class="btn btn-default">Join Now</a>
+					</div>
+				
+			</div>
+			
+		</div>	
+	</footer>
+	
+	<div class="sub-footer">
+		<div class="container">
+			<div class="social-icon">
+				<div class="col-md-4">
+					<ul class="social-network">
+						<li><a href="https://www.facebook.com/Mediuniv/" target="blank" class="fb tool-tip" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="https://twitter.com/caps_medi" target="blank" class="twitter tool-tip" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="https://www.instagram.com/medicaps_university/" target="blank" class="gplus tool-tip" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+						<li><a href="https://www.linkedin.com/company/medi-caps-university-indore/" target="blank" class="linkedin tool-tip" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+						<li><a href="https://www.youtube.com/channel/UCSeSaSzuPcLY8f0Zov01ZuQ" target="blank" class="ytube tool-tip" title="YouTube"><i class="fa fa-youtube-play"></i></a></li>
+					</ul>	
+				</div>
+			</div>
+			
+			<div class="col-md-4 col-md-offset-4">
+				<div class="copyright">
+					&copy; Medicaps University 2000 | <strong>PRAGYANSH NIGAM</strong>. &nbsp;&nbsp;&nbsp; 
+					All Rights Reserved.
+				</div>
+                <!-- 
+                    All links in the footer should remain intact. 
+                    Licenseing information is available at: http://bootstraptaste.com/license/
+                    You can buy this theme without footer links online at: http://bootstraptaste.com/buy/?theme=Day
+                -->
+			</div>						
+		</div>				
+	</div>
+	
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="{% static 'js/jquery.js' %}"></script>		
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>	
+	<script src="{% static 'js/wow.min.js' %}"></script>
+	<script>
+	wow = new WOW(
+	 {
+	
+		}	) 
+		.init();
+	</script>	
+  </body>
+</html>
+
+{% endblock %}

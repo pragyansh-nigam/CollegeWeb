@@ -1,0 +1,44 @@
+{% extends 'studentdefault.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="gallery">
+		<div class="text-center">
+			<h2>Ask Your Question!</h2>
+		</div> <hr><br><br>
+
+           <form action="/student/stuquestion1" method="post">
+            {% csrf_token %}
+               <textarea class='form-control' cols="60" rows="2" name="qus" required></textarea>
+               
+               <br>
+               <button type="submit" name="submit" class="btn btn-primary btn-lg" required="required">Send</button>
+           </form>  <br><br>
+
+            <table class='table' style="color:black;">
+                <tr>
+                    <th>Question</th>
+                    <th>When</th>
+                    <th>Answered By</th>
+                </tr>
+
+                {% for qus in questions %}
+                    <tr>
+                        <th>{{qus.1}}</th>
+                        <th>{{qus.2}}</th>
+                    </tr>
+                    <tr>
+                        {% for ans in qus.5 %}
+                        <tr>
+                            <td>{{ans.0}}</td>
+                            <td>{{ans.1}}</td>
+                            <td>{{ans.2}}</td>
+                        </tr>
+                        {% endfor %}
+                    </tr>
+                {% endfor %}
+            </table>
+</div>
+
+{% endblock %}

@@ -1,0 +1,57 @@
+{% extends 'default.html'%}
+{% load static %}
+
+{% block content %}
+
+<div class="mapouter"><div class="gmap_canvas"><iframe width="1500" height="600" id="gmap_canvas" src="https://maps.google.com/maps?q=Medicaps%20university%2C%20Indore%2C%20India&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net/blog/20-off-discount-for-elegant-themes-divi-sale-coupon-code-2019/">embedgooglemap.net</a></div><style>.mapouter{position:relative;text-align:right;height:600px;width:1500px;}.gmap_canvas {overflow:hidden;background:none!important;height:600px;width:1500px;}</style></div>
+<!--<div class="map">
+		<iframe src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Indore,+India+Capital+Region,+Indonesia&amp;aq=3&amp;oq=kuningan+&amp;sll=37.0625,-95.677068&amp;sspn=37.410045,86.572266&amp;ie=UTF8&amp;hq=&amp;hnear=Kuningan&amp;t=m&amp;z=14&amp;ll=-6.238824,106.830177&amp;output=embed">
+		</iframe>
+	</div>-->
+	<br><br>
+	<section class="contact-page">
+        <div class="container">
+            <div class="text-center">        
+                <h2>Drop Your Message</h2> <br>
+            </div> 
+            <div class="row contact-wrap"> 
+                <div class="status alert alert-success" style="display: none"></div>
+                <form id="main-contact-form" class="contact-form" name="contact-form" method="post" action="/college/savecontact">
+                    {% csrf_token %}
+                    <div class="col-sm-5 col-sm-offset-1">
+                        <div class="form-group">
+                            <label>Name *</label>
+                            <input type="text" name="cname" class="form-control" required="required">
+                        </div>
+                        <div class="form-group">
+                            <label>Email *</label>
+                            <input type="email" name="email" class="form-control" required="required">
+                        </div>
+                        <div class="form-group">
+                            <label>Phone *</label>
+                            <input type="number" name="phone" class="form-control" required="required">
+                        </div>                        
+                    </div>
+                    <div class="col-sm-5">
+                        <div class="form-group">
+                            <label>Subject *</label>
+                            <input type="text" name="subject" class="form-control" required="required">
+                        </div>
+                        <div class="form-group">
+                            <label>Message *</label>
+                            <textarea name="message" id="message" required="required" class="form-control" rows="8"></textarea>
+                        </div>                        
+                        <div class="form-group">
+                            <button type="submit" name="submit" class="btn btn-primary btn-lg" required="required">Send message</button>
+                            &nbsp;&nbsp;&nbsp;
+                            {% for message in messages %}
+                                <b style="color:green;">{{message}}</b>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </form> 
+            </div><!--/.row-->
+        </div><!--/.container-->
+    </section><!--/#contact-page-->
+
+{% endblock %}

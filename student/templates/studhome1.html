@@ -1,0 +1,27 @@
+{% extends 'studentdefault.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="gallery">
+		<div class="text-center">
+			<h2>Welcome {{name}}!</h2> 
+		</div> <hr><br><br>
+     <table class='table' style="color:black;">
+                <tr>
+                    <th>Ask Question</th>
+                    <th>Email</th>
+                    <th>Phone</th> 
+                </tr>
+
+     			{% for n in names %}
+     			<tr>
+     				<th><a href="/student/stuquestion1">{{n.0}}</a></th>
+     				<th>{{n.1}}</th>
+     				<th>{{n.2}}</th>
+     			</tr>
+     			{% endfor %}
+     </table>
+</div>
+    
+{% endblock %}

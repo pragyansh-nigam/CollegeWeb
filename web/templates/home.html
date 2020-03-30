@@ -1,0 +1,141 @@
+{% extends 'default.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="slider">		
+		<div id="about-slider">
+			<div id="carousel-slider" class="carousel slide" data-ride="carousel">
+				<!-- Indicators -->
+				<ol class="carousel-indicators visible-xs">
+					<li data-target="#carousel-slider" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel-slider" data-slide-to="1"></li>
+					<li data-target="#carousel-slider" data-slide-to="2"></li>
+				</ol>
+
+				<div class="carousel-inner">
+					<div class="item active">						
+						<img src="{% static 'img/medi7.jpg' %}" height="800" width="1500" class="img-responsive" alt=""> 
+				    </div>
+
+					<div class="item">						
+						<img src="{% static 'img/2.jpg' %}" height="800" width="1500" class="img-responsive" alt="">
+						<div class="carousel-caption">
+							<div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.3s">								
+								<h2><span>Admission 2020</span></h2>
+							</div>
+							<div class="col-md-10 col-md-offset-1">
+								<div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.6s">								
+									<p>Admissions for 2020-21 are open for all courses</p>
+								</div>
+							</div>
+							<div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.9s">								
+								<form class="form-inline">
+									<div class="form-group">
+										<button type="livedemo" name="Live Demo" class="btn btn-primary btn-lg" required="required"><a href="http://university.liveon.biz/upload/medicapsuniv/Academic_Calendar.pdf" target="blank">Academic Calendar</a></button>
+									</div>
+									<div class="form-group">
+										<button type="getnow" name="Get Now" class="btn btn-primary btn-lg" required="required"><a href="http://www.medicaps.ac.in/index.php?action=sf-page&pageid=234&sysmenuid=916" target="blank">Apply Now</a></button>
+									</div>
+								</form>
+							</div>
+						</div> 
+				    </div>
+			
+				    <div class="item">
+						<img src="{% static 'img/medi7.jpg' %}" height="800" width="1500" class="img-responsive" alt=""> 
+						<div class="carousel-caption">
+							<div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="1.0s">								
+								<h2>Campus Life</h2>
+							</div>
+							<div class="col-md-10 col-md-offset-1">
+								<div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.6s">								
+									<p>Go through the study atmosphere in Medicaps</p>
+								</div>
+							</div>
+							<div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="1.6s">								
+								<form class="form-inline">
+									<div class="form-group">
+										<button type="livedemo" name="purchase" class="btn btn-primary btn-lg" required="required"><a href="http://www.medicaps.ac.in/index.php?action=sf-campus&sysmenuid=928" target="blank">Smart Campus</a></button>
+									</div>
+									<div class="form-group">
+										<button type="getnow" name="subscribe" class="btn btn-primary btn-lg" required="required"><a href="http://www.medicaps.ac.in/index.php?action=sf-page&pageid=71&sysmenuid=911" target="blank">Research</a></button>
+									</div>
+								</form>
+							</div>
+						</div>
+				    </div>  
+				</div>
+				
+				<a class="left carousel-control hidden-xs" href="#carousel-slider" data-slide="prev">
+					<i class="fa fa-angle-left"></i> 
+				</a>
+				
+				<a class=" right carousel-control hidden-xs"href="#carousel-slider" data-slide="next">
+					<i class="fa fa-angle-right"></i> 
+				</a>
+			</div> <!--/#carousel-slider-->
+		</div><!--/#about-slider-->
+	</div><!--/#slider-->
+	
+	<div class="about">
+		<div class="container">
+			<div class="text-center">
+				<h2>Welcome To Medicaps University</h2>
+				<div class="col-md-10 col-md-offset-1">
+					<p>Medi-Caps University is a premier central Indian engineering and management institute. Baptized in an endearing spirit, Medi-Caps Institute of Technology and Management took its first step in July 2000 with a vision to design future scientifically. Within a short span of eighteen years the Institute has attained a strong footing amongst all the technical colleges of Madhya Pradesh. It is situated on a beautiful hillock with a pleasant environment, on the Agra-Bombay National Highway, 15 km. away from Indore Railway Station, a historic town, now known as the commercial, industrial and trade capital of Madhya Pradesh. <br><br>
+					Medi-Caps Institute of Technology & Management was affiliated to Rajiv Gandhi Proudyogiki Vishwavidyalaya (RGPV), Bhopal, the Technical University of Madhya Pradesh for engineering courses, Devi Ahilya Vishwavidyalaya(DAVV), Indore for management course and approved by the All India Council for Technical Education(AICTE), New Delhi. Also Computer Science, Electronics & Communication and Mechanical departments are accredited by the National Board of Accreditation(NBA). <br><br>
+					In 2015, MITM became a constituent college of Medi-Caps University. 
+					</p>
+				</div>
+		
+				<div class="col-md-6 col-sm-6 col-xs-6">
+					<div class="btn-gamp"><a href="/college/about">Learn More</a></div>
+				</div>
+				<div class="col-md-6 col-sm-6 col-xs-6">
+					<div class="gamp-btn"><a href="{% static 'rule book.pdf' %}" download>Rule Book</a></div>
+				</div>
+				
+			</div>	
+		</div>			
+	</div>
+	
+	<section class="action">
+		<div class="container">
+			<div class="left-text hidden-xs">
+				<h4>study information</h4>
+				<p>Medi-Caps University offers a variety of choices to pursue higher education through programmes offered in the University departments. <br>
+				Admission process requires an application to be submitted by the aspiring candidate. The prospectus and the course information are provided in the brochure and the department pages.The application form can also be found in the website or collected in person from the office.
+				</p>
+			</div>
+			<div class="right-image hidden-xs">
+				<img src="{% static 'img/mu.png' %}">
+			</div>
+		</div>
+	</section>
+
+	<div class="services">
+		<div class="container">
+			<div class="text-center">
+				<h2>medi-caps university</h2>
+			</div>
+			<div class="col-md-3 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+				<i class="fa fa-inr"></i>
+				<a href="http://www.medicaps.ac.in/upload/medicapsuniv/Admission/Fee_Structure.pdf" target="blank"><h3>Fee Structure</h3></a>
+			</div>
+			<div class="col-md-3 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+				<i class="fa fa-male"></i>
+				<a href="http://www.medicaps.ac.in/index.php?action=sf-page&pageid=30" target="blank"><h3>Career</h3></a>
+			</div>
+			<div class="col-md-3 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms">
+				<i class="fa fa-book"></i>	
+				<a href="http://www.medicaps.ac.in/index.php?action=sf-degreetype&coursetypeid=1&sysmenuid=906" target="blank"><h3>Courses</h3></a>
+			</div>
+			<div class="col-md-3 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1200ms">
+				<i class="fa fa-calendar"></i>	
+				<h3>Time Table</h3>
+			</div>
+		</div>			
+	</div>
+	
+{% endblock %}

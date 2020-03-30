@@ -1,0 +1,30 @@
+{% extends 'facultydefault.html' %}
+
+{% block content %}
+
+<div class="gallery">
+		<div class="text-center">
+			<h2>Welcome {{name}}!</h2> 
+		</div> <hr><br><br>
+
+          <h2>Students List</h2>
+          <hr><br>
+        
+          <table class='table' style="color:black;">
+                <tr>
+                    <th>Student Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                </tr>
+
+                {% for stud in students %}
+                    <tr>
+                        <th>{{stud.0}}</th>
+                        <th>{{stud.1}}</th>
+                        <th>{{stud.2}}</th>
+                    </tr>
+                {% endfor %}    
+          </table> <br><br>
+</div>
+
+{% endblock %}

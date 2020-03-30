@@ -1,0 +1,40 @@
+{% extends 'studentdefault.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="gallery">
+		<div class="text-center">
+			<h2>Give Your Answers!</h2>
+		</div> <hr><br><br>
+
+          <h3>Questions List</h3> <hr><br>
+
+          <table class='table' style="color:black;">
+                <tr>
+                    <th>Asked By</th>
+                    <th>Question</th>
+                    <th>When</th>
+                    <th>Answer</th>
+                </tr>
+                {% for qus in questions %}
+                    <tr>
+                        <th>{{qus.3}}</th>
+                        <th>{{qus.1}}</th>
+                        <th>{{qus.2}}</th>
+                        <td>
+                            <form action='/student/stuanswer1' method='post'>
+                                {% csrf_token %}
+                                <input type='hidden' name="qus" value='{{qus.0}}'>
+                                <textarea name='answer'></textarea>
+                                <br>
+                                <button type="submit" name="submit" class="btn btn-primary btn-lg">Send</button>
+                            </form>
+                        </td>
+                    </tr>
+
+                {% endfor %}
+          </table>
+</div>
+
+{% endblock %}
