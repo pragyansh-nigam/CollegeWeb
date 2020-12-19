@@ -186,7 +186,7 @@ def sendMail(name,mail):
     fromaddr = 'en17cs301180@medicaps.ac.in'
     toaddrs  = mail
     username = 'en17cs301180@medicaps.ac.in'
-    password = 'paxvobiscum'
+    password = 'put_your_password_here'
     server = smtplib.SMTP('smtp.gmail.com:587')
     server.starttls()
     server.login(username,password)
